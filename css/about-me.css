@@ -1,0 +1,34 @@
+.jolly { 
+	color: #8000ff; 
+}
+
+#clumsy {
+	color: maroon;
+}
+
+span {
+	color: blue;
+	font-weight: 900;
+}
+
+body {
+	background-color: #e8d0ec;
+	font-family: Verdana;
+}
+
+.my-classes {
+	font-family: monospace;
+	font-size: 12pt;
+}
+
+.movies {
+	font-family: cursive;
+}
+
+h1, h3 {
+	color: #a02020;
+}
+
+.happy-img, .sad-img {
+	height: 220px;
+}
