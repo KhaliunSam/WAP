@@ -1,0 +1,15 @@
+
+.test {
+	border:2px solid red;
+}
+body {
+	background-image: url("../img/background.png");
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size:  8pt;
+}
+#banner {
+	background-image: url("../img/bannerbg.png");
+	text-align: center;
+	background-repeat: repeat-x;
+	border:2px solid red;
+}
