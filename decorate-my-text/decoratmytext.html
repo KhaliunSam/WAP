@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="../css/decoratemytext.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../js/decoratemytext.js"></script>
+<title>Decorate My Text</title>
+</head>
+<body>
+	<div>
+		<h1 id="p-title">Text Decorator</h1>
+		<img alt="decorated" src="../img/decorated.gif" class="decorated-image">
+	</div>
+	<form>
+  	<fieldset>
+    	<legend>Text</legend>
+    		<textarea cols="30" rows="4" id="mbig">
+    		Sample Item 1
+    		Sample Item 2
+   			</textarea>
+	</fieldset>
+	<fieldset>
+	 	<legend>Decoration</legend>
+	 	<button type="button" onClick="mbigger()">Bigger Decorations!</button><br/>
+	 	<input type="checkbox" name="bling" onclick="mbold()" onchange="mbold(this)"/>Bling
+	</fieldset>
+	</form>
+</body>
+</html>
