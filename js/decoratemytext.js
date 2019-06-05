@@ -2,18 +2,31 @@ function hi(){
 	alert("Hello, world!");
 }
 
+var timerId = 0;
 function mbigger(){
-	    setInterval(function () {
-	        area = document.getElementById('mbig');
-	        var fontSize = window.getComputedStyle(area, null).getPropertyValue("font-size");
-	        fontSize = parseInt(fontSize) + 2 + "px"
-	        area.style.fontSize = fontSize;
-	        if(fontSize>24)
-	            clearInterval(timer);
-
-	    }, 500);
-	}
+	if(timerId == 0)
+		timerId = setInterval(increaseFontSize, 500);
+	else {
+        clearInterval(timerId);
+        timerId = 0;
+    }	
+}
 	//document.getElementById("mbig").style.fontSize=24 + "px";
+
+function increaseFontSize(){
+	var area = document.getElementById('mbig');
+    var fontSizeStr = window.getComputedStyle(area, null).getPropertyValue("font-size");
+    var fontSize = parseInt(fontSizeStr);
+    
+    if(fontSize >= 24){
+        clearInterval(timerId);
+        timerId = 0;
+        return;
+    }
+    fontSizeStr = fontSize + 2 + "px";
+    area.style.fontSize = fontSizeStr;
+    console.log(fontSizeStr);
+}
 
 function mbold(value){
 	if(value.checked){
