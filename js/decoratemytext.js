@@ -32,10 +32,12 @@ function mbold(value){
 		document.getElementById("mbig").style.fontWeight="bold";
 		document.getElementById("mbig").style.color="green";
 		document.getElementById("mbig").style.textDecoration="underline";
+		document.getElementsByTagName("body")[0].style.backgroundImage = "url('https://courses.cs.washington.edu/courses/cse190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg')";
 	}
 	else{
 		document.getElementById("mbig").style.fontWeight="normal";
 		document.getElementById("mbig").style.color="black";
 		document.getElementById("mbig").style.textDecoration="none";
+		document.getElementsByTagName("body")[0].style.backgroundImage = "none";
 	}
 }
