@@ -25,7 +25,6 @@ function increaseFontSize(){
     }
     fontSizeStr = fontSize + 2 + "px";
     area.style.fontSize = fontSizeStr;
-    console.log(fontSizeStr);
 }
 
 function mbold(value){
@@ -36,5 +35,7 @@ function mbold(value){
 	}
 	else{
 		document.getElementById("mbig").style.fontWeight="normal";
+		document.getElementById("mbig").style.color="black";
+		document.getElementById("mbig").style.textDecoration="none";
 	}
 }
