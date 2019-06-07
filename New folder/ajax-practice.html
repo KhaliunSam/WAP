@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<script>
+/* $(document).ready(function(){
+	$("#okay").click(function(){
+		var value = $("#text").val();
+		var value2 = $("#text2").val();
+		var sum = parseInt(value) + parseInt(value2);
+		alert(sum);
+	})
+}) */
+
+$(document).ready(function(){
+	$("#okay").click(function(){
+		var value = $("#text").val();
+		var value2 = $("#text2").val();
+		var oper = $(".operators").val();
+		if(oper == 1){
+			var result = parseInt(value) + parseInt(value2);
+		}
+		else if(oper == 2){
+			var result = parseInt(value) - parseInt(value2);
+		}
+		else if(oper == 3){
+			var result = parseInt(value) * parseInt(value2);
+		}else{
+			var result = parseInt(value) / parseInt(value2);
+		}
+		alert(result);
+	})
+})
+</script>
+<title>Insert title here</title>
+</head>
+<body>
+<div> 
+<input type="number" id="text" width="20"/>
+<label for="operators"></label>
+  <select class="operators" name="operators" required>
+    <option value="" disabled selected>Select operators</option>
+    <option value="1">+</option>
+    <option value="2">-</option>
+    <option value="3">*</option>
+    <option value="4">/</option>
+  </select>
+<input type="number" id="text2" width="20"/>
+<button type="button" id="okay">ok</button>
+</div>
+</body>
+</html>
