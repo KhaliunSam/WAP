@@ -1,0 +1,9 @@
+$(function() {
+$("#exampleform").submit(validateData);
+});
+function validateData(event) {
+if ($("#city").val() == "" || $("#state").val().length != 2) {
+alert("Error, invalid city/state."); // show error message
+event.preventDefault();
+}
+}
